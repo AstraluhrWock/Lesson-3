@@ -1,4 +1,6 @@
-﻿using System;
+﻿/* Любовь Соколова */
+
+using System;
 using System.Linq;
 
 namespace Lesson_3
@@ -176,7 +178,7 @@ namespace Lesson_3
                set
                 {
                     if (value == 0)
-                        throw new Exception("Числитель не можнт быть равен 0");
+                        throw new Exception("Числитель не может быть равен 0");
                     _numerator = value;
                 }
             }
@@ -187,7 +189,7 @@ namespace Lesson_3
                 set
                 {
                     if (value == 0)
-                        throw new Exception();
+                        throw new Exception("Знаминатель не может быть равен 0");
                     _denominator = value;
                 }
             }
@@ -261,6 +263,7 @@ namespace Lesson_3
                     else num1._denominator -= num1._numerator;
                 }
                 GCD._numerator = num1._numerator;
+                // верно считает НОД, но вычисления происходят с измененными данными
                 FractionalNumbers result = new FractionalNumbers(num1._numerator / GCD._numerator, num1._denominator / GCD._numerator);
                 return result;
             }
