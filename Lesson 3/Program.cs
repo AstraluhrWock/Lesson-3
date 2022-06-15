@@ -1,7 +1,6 @@
 ﻿/* Любовь Соколова */
 
 using System;
-using System.Linq;
 
 namespace Lesson_3
 {
